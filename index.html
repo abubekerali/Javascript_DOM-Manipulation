@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>UFO SIGHTING</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="html-table-search.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="head-h1">UFO SIGHTING</h1>
+            
+        </header>
+        <aside class="aside">
+            <div>
+            
+                <div class="form-group">
+                    <p id="help">Filter Search</p>
+                    <div class='search-fields'>
+                        <small id="help">Enter a Date</small>
+                        <input type="text" class="form-control form-control-sm text-dark bg-white" list="date_list" id="datetime" placeholder="1/11/2017"/>
+                        <datalist id="date_list"></datalist>  
+                    </div>
+                    
+                    <div class="search-fields">
+                        <small id="help">Enter City</small>
+                        <input type="text" class="form-control form-control-sm text-dark bg-white" list="city_list" id="city" placeholder="bonita"/>
+                        <datalist id="city_list"></datalist>
+                        
+                    </div>
+                    <div class='search-fields'>
+                        <small id="help">Enter State</small>
+                        <input type="text" class="form-control form-control-sm text-dark bg-white" list="state_list" id="state" placeholder="nc"/>
+                        <datalist id="state_list"></datalist>
+                        
+                    </div>
+                    <div class='search-fields'>
+                        <small id="help">Enter Country</small>
+                        <input type="text" class="form-control form-control-sm text-dark bg-white" list="country_list" id="country" placeholder="us"/>
+                        <datalist id="country_list"></datalist>
+                        
+                    </div>
+                    <div class='search-fields'>
+                        <small id="help">Enter Shape</small>
+                        <input type="text" class="form-control form-control-sm text-dark bg-white" list="shape_list" id="shape" placeholder="circle"/>
+                        <datalist id="shape_list"></datalist>
+                        
+                    </div>
+                    <div class='search-fields'>
+                        <small id="help">Results Per Page</small>
+                        <input type="text" class="form-control form-control-sm text-dark bg-white" list="page_list" id="Page" placeholder="100"/>
+                        <datalist id="date_list"></datalist>
+                            
+                    <div class="buttons">
+                        <button id="search" class="btn btn-primary bg-dark">Update Search</button>
+                        
+                    </div>
+                </div>
+            </div>       
+        </aside>
+        <article class="main">
+            
+            <div class="table-wrapper table-responsive">
+                                   
+                <table id= "tableData" class="table">
+                    <thead>
+                        <tr>
+                            <th>Date/Time</th>
+                            <th>City</th>
+                            <th>State</th>
+                            <th>Country</th>
+                            <th>Shape</th>
+                            <th>Duration Minutes</th>
+                            <th>Comments</th>
+                          </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                    
+                    
+                </table>
+                
+                
+            </div>
+            
+        </article>
+        <footer class="footer">
+            
+            <div>All rights reserved</div>
+            
+            
+        </footer>
+    </div>
+
+    
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    
+    <!-- <script src="partData.js"></script> -->
+    <script src="Data/data.js"></script>
+    <!--<script src="testData.js"></script>-->
+    <script type="text/javascript" src="index2.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,178 @@
+*{  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+body {
+    background:  rgb(32, 43, 63);
+}
+
+
+header {
+    grid-area: header;
+    
+  }
+  
+footer {
+    grid-area: footer;
+    background:  rgb(64, 85, 121);
+    z-index: 2;
+  }
+  
+article {
+    grid-area: article;
+  }
+  
+aside {
+    grid-area: aside;
+    background:  rgb(64, 85, 121);
+  }
+
+.wrapper {
+    display: grid;
+    
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 150px calc(100vh - 170px) 20px;
+    height: 100vh;
+    grid-template-areas: 
+        "header header "
+        "aside article"
+        "footer footer";
+    
+}
+
+@media all and (max-width: 880px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 500px auto;
+        grid-template-areas:
+        "header"
+        "aside"
+        "article"
+        "footer";
+    }
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: url('ufo.jpg') center no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    text-shadow: 3px 3px 5px rgb(71, 71, 71);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header:hover {
+    background: url('ufo.jpg') center no-repeat;
+    background-size: cover;
+}
+
+
+@media all and (max-width: 880px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.head-h1 {
+    margin-right: 30px;
+    font-size: 8vw;
+    font-weight: bold;  
+}
+
+.head-h1:hover {
+    color: rgb(109, 161, 202);
+}
+
+.head-p {
+    align-self: flex-end;
+    font-size: 20px; 
+}
+
+
+.form-group {
+    padding: 20px;
+}
+
+#help {
+    color: rgb(243, 245, 247);   
+}
+
+.search-fields {
+    padding-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media all and (max-width: 880px) {
+    .buttons {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.dropoptions {
+    background:  rgb(64, 85, 121)!important;
+    /* background-color: rgb(44, 65, 118); */
+    color: aliceblue !important;
+}
+
+/* Table ---------------------------------------------- */
+
+.main {
+    padding: 30px;
+    background: url('images/mainback.jpg') center;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table tr td, .table tr th{
+        color: aliceblue;
+}
+
+td { 
+    word-wrap:break-word;
+}
+
+tr {
+    text-align: center;
+    font-size: 75%;
+}
+tr:nth-child(even) {
+    background-color: rgb(64, 85, 121);
+}
+
+#table {
+    height: calc(100vh - 180px);
+    table-layout:fixed;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer div {
+    font-size: 10px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.footer div:hover {
+    color: rgb(105, 89, 82);
+    color: rgb(80, 77, 77);
+}
+
