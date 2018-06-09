@@ -67,7 +67,7 @@ aside {
 }
 
 .header:hover {
-    background: url('ufo.jpg') center no-repeat;
+    background: url('ufo.jpg') center ;
     background-size: cover;
 }
 
