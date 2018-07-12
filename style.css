@@ -131,7 +131,7 @@ aside {
 
 .main {
     padding: 30px;
-    background: url('images/mainback.jpg') center;
+    background: center;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
 }
